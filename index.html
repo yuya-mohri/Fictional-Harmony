@@ -12,14 +12,18 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
     <link rel="stylesheet" href="css/main.css">
+    
   
   </head>
   <body data-spy="scroll" data-target="#navbarNav" data-offset="30">
   <div class="wrapper">
     <!--TOP-->
     <div id="page-top">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: lightgray;">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切り替え">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,11 +33,12 @@
             <li class="navbar-item"><a class="nav-link" href="#introduction">Fictional Harmonyとは？</a></li>
             <li class="navbar-item"><a class="nav-link" href="#activity">活動紹介</a></li>
             <li class="navbar-item"><a class="nav-link" href="#greeting">代表挨拶</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#day-time-place">活動日時・場所</a></li>
           </ul>
         </div>  
       </nav>
       
-      <div class="page-top-text text-center ">
+      <div class="page-top-text text-center animate__animated animate__flipInY">
         <div class="page-top-phrase">架空音楽同好会</div>
         <h1 class="page-top-title font-italic">Fictional Harmony</h1>
       </div>
@@ -41,20 +46,22 @@
     
     <!--団体紹介-->
     <section id="introduction">
-      <h2 class="introduction-title text-center">Fictional Harmonyとは？</h2>
-      <div class="introduction-text">
-        <p>
-          「一緒にバンド活動ができる仲間を探したい！」、「初めて楽器に触るので誰かに教えて欲しい！」、「ほかの作曲者と交流してインスピレーションを受けたい！」……音楽活動に対するあなたの希望を叶えるため、名古屋を中心に活動している音楽同好会。それが我々、「Fictional Harmony」です。<br>
-          Fictional Harmonyでは、楽器演奏・歌唱・作詞作曲といった3分野を主として皆さんに練習と交流の場を提供しています！本格的な技術や知識を身につけたい方からライトな趣味として楽しみたい方まで、それぞれの形を大切に音楽を奏でてみませんか？
-        </p>
-      </div>   
+      <div class="introduction-contents animate__animated">
+        <h2 class="introduction-title text-center">Fictional Harmonyとは？</h2>
+        <div class="introduction-text">
+          <p>
+            「一緒にバンド活動ができる仲間を探したい！」、「初めて楽器に触るので誰かに教えて欲しい！」、「ほかの作曲者と交流してインスピレーションを受けたい！」……音楽活動に対するあなたの希望を叶えるため、名古屋を中心に活動している音楽同好会。それが我々、「Fictional Harmony」です。<br>
+            Fictional Harmonyでは、楽器演奏・歌唱・作詞作曲といった3分野を主として皆さんに練習と交流の場を提供しています！本格的な技術や知識を身につけたい方からライトな趣味として楽しみたい方まで、それぞれの形を大切に音楽を奏でてみませんか？
+          </p>
+        </div>
+      </div>  
     </section>
     
     <!--活動紹介-->
     <section id="activity">
       <h2 class="activity-title text-center">活動紹介</h2>
       <div class="activity-contents container">
-        <div class="row">
+        <div class="activity-content1 row animate__animated">
           <div class="activity-image col-md-6 text-center">
             <img class="img-fluid" src="img/instrument.jpg" width="450" height="450" alt="楽器演奏分野">
           </div>
@@ -66,7 +73,7 @@
           </div>
         </div>
         
-        <div class="row mt-5">
+        <div class="activity-content2 row mt-5 animate__animated">
           <div class="activity-image col-md-6 order-md-last text-center">
             <img class="img-fluid" src="img/singing.jpg" width="450" height="450" alt="歌唱分野">
           </div>
@@ -78,7 +85,7 @@
           </div>
         </div>
         
-        <div class="row mt-5">
+        <div class="activity-content3 row mt-5 animate__animated">
           <div class="activity-image col-md-6 text-center">
             <img class="img-fluid" src="img/songwriting.jpg" width="450" height="450" alt="作詞作曲分野">
           </div>
@@ -95,7 +102,7 @@
     <!--代表挨拶-->
     <section id="greeting">
       <h2 class="greeting-title text-center">代表挨拶</h2>
-      <div class="greeting-contents text-center">
+      <div class="greeting-contents text-center animate__animated">
         <img class="img-fluid greeting-img" src="img/pose_kiri_man.png" width="200" height="200" alt="代表の嘘田奏">
         <p class="greeting-name">嘘田　奏</p>
         <div class="greeting-text">
@@ -115,13 +122,31 @@
       </div>
     </section>
     
+    <!--活動日時・場所-->
+    <section id="day-time-place">
+      <div class="day-time-place-contents animate__animated">
+        <h2 class="day-time-place-title">活動日時・場所</h2>
+        <div id="map"></div>
+        
+        <p class="day-time-place-address">
+          〒450-0000<br>
+          愛知県名古屋市xxxxxxxxxx<br>
+        </p>
+        <ul class="day-time-place-text">
+          <li>主に上記の場所で活動を行いますが、稀に変更することがあるため見学をご希望の方は事前に代表の嘘田までご連絡をお願いします。</li>
+          <li>活動時間は毎週水曜日の19:00〜22:00、日曜日の10:00〜17:00です。途中参加・退出もOK！</li>
+        </ul>
+      </div>
+    </section>
     
     <footer>
       <small>※ページの記載内容はすべて架空のものです</small>
     </footer>
   </div>    
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--Waypoints.js-->
+    <script src="js/jquery.waypoints.min.js"></script>
     <!--Popper.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <!--Bootstrap-->
@@ -130,5 +155,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
     
     <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+    
+    <!--Google Map API-->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh-o6f1e9-ypIjpEBkRyxp6Inm-bLPbBw">
+    </script>
   </body>
 </html>
